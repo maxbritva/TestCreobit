@@ -96,7 +96,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 52e2ddaf553a047d2b72a0e7e47f381f
-    m_Address: Assets/Scenes/Menu.unity
+    m_Address: Initial
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -130,11 +130,6 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 6d0c275ae3b5d4f72be2e564c615425e
-    m_Address: Assets/Prefab/BootScope.prefab
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 757b8ae0a910acc4ba614103a720da3b
     m_Address: D5
     m_ReadOnly: 0
@@ -155,6 +150,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 86f9c8e4ebfaf45d89b2f7337e2ca87c
+    m_Address: C5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8b7de6db591b3e348bebb509a1f99304
     m_Address: CK
     m_ReadOnly: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 8c9cfa26abfee488c85f1582747f6a02
-    m_Address: Assets/Scenes/Solitaire.unity
+    m_Address: Solitaire
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -200,6 +200,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9d94424fe6bc14c3ab5a9b1c65e92309
+    m_Address: Hud
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: b3b5071141b333d47a65254ba964c2ea
     m_Address: C3
     m_ReadOnly: 0
@@ -220,18 +225,8 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: bc5c7f47cb5f42d44b3560fae24e79a8
-    m_Address: C5
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: bcbf955365a80cb47adbc4f5b9970045
     m_Address: S6
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: bda7259ed9d744d6c92517bf923131be
-    m_Address: Assets/Sprites/Clicker/pngegg.png
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
@@ -292,11 +287,6 @@ MonoBehaviour:
     FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: f79b01e0a965648428ffb65d0ee5742a
     m_Address: D9
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: f8c20c0f2dac9447e9cef44fad47e420
-    m_Address: Assets/Scenes/Clicker.unity
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

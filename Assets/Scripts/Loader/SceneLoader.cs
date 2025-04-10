@@ -1,35 +1,28 @@
-using UnityEngine;
+using System;
+using System.Threading;
+using Cysharp.Threading.Tasks;
+using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
 
 namespace Loader
 {
-    public class SceneLoader : MonoBehaviour
+    public class SceneLoader
     {
-        [SerializeField] private GameObject _loadingScreen;
-        private const string ClickerScene = "Clicker";
-        private const string SolitaireScene = "Solitaire";
-        private const string MenuScene = "Menu";
-
-        public void ShowOffScreen(bool value) => _loadingScreen.SetActive(value);
-
-        public async void LoadClicker()
+        private CancellationTokenSource _cts;
+        
+        public async UniTask LoadScene(string name, Action onLoaded = null)
         {
-            ShowOffScreen(true);
-            await SceneManager.LoadSceneAsync(ClickerScene);
-            ShowOffScreen(false);
+            if (SceneManager.GetActiveScene().name == name)
+            {
+                onLoaded?.Invoke();
+                return;
+            }
+            _cts = new CancellationTokenSource();
+            var waitNextScene = Addressables.LoadSceneAsync(name);
+            while (waitNextScene.IsDone == false) 
+                await UniTask.Yield(PlayerLoopTiming.Update, _cts.Token);
+            onLoaded?.Invoke();
         }
-
-        public async void LoadSolitaire()
-        {
-            ShowOffScreen(true);
-            await SceneManager.LoadSceneAsync(SolitaireScene);
-        }
-
-        public async void LoadMenu()
-        {
-            ShowOffScreen(true);
-            await SceneManager.LoadSceneAsync(MenuScene);
-            ShowOffScreen(false);
-        }
+        
     }
 }
